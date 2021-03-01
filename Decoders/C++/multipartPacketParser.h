@@ -1,7 +1,10 @@
 #ifndef _MULTIPART_PACKET_PARSER_H_
 #define _MULTIPART_PACKET_PARSER_H_
 
-#include "../../common_includes.h"
+#include <vector>
+#include <string>
+
+using namespace std;
 
 struct packetData {
 	int packet_group_id, group_packet_size, group_packet_num;
