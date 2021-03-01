@@ -1,5 +1,4 @@
 #include "multipartPacketParser.h"
-#include "../backendDelegate.h"
 
 vector<vector<string>> multipartPacketParser::buffer(MULTIPART_MAX_BUFFER_SIZE, vector<string>());
 
@@ -84,5 +83,5 @@ void multipartPacketParser::clearBuffer() {
 
 // callback to ui functions
 void multipartPacketParser::callCallback(string& data) {
-	backendDelegate::updateParsedDataBuffer(data);
+	// callback to func to deal with original data
 }
